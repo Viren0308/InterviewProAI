@@ -10,7 +10,7 @@ class User(Base):
 
     full_name = Column(String(100), nullable=False)
 
-    email = Column(String(100), unique=True, nullable=False, index=True)
+    email = Column(String(255), unique=True, nullable=False, index=True)
     
     phone_number = Column(String(15), unique=True, nullable=True, index=True)
 
