@@ -4,8 +4,6 @@ from app.core.database import Base, engine
 import app
 from app.api.v1.auth import router as auth_router
 
-Base.metadata.create_all(bind=engine)
-
 app = FastAPI(
     title="InterviewProAI",
     version="0.1.0"
